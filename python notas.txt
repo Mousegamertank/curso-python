@@ -1,0 +1,82 @@
+---------------AULA 2-----------------------
+Python é uma linguagem de proposito geral, não se foca em uma coisa,
+Python é simples facil e intuitivo;
+Multiplataforma (funciona no windows);
+Python vem com a essencia do python;
+Linguagem Livre;
+Propagamação do Python deve ser Organizado;
+Orientada a Objetos;
+Muitas Bibliotecas;
+ZEN OF PYTHON
+Simples melhor que complexo, complexo melor que compicado;
+Python suporta numeros grandes, computação 3D, Inteligencia Artificial, Biotecnologia
+
+--------------AULA 3------------------------
+Import this = filosofia zen python
+python --version (ver o versionamento do python instalado)
+
+----------------AULA 4----------------------
+Dados com mensagens utilizam aspas (simples)
+Todos os comandos são funções 
+print('') [mostra a mensagem]
+print() [mostra numeros ou variaveis]
+para apresentar a soma entre mensagens utiliza-se + ou , 
+utiliza-se , de preferencia quando houver array de caracter e numero
+Utilizar letras minusculas e toda a variavel é um objeto;
+= recebe
+//exemplo
+nome = 'pedro'
+idade = 25
+peso = 75.8
+print(nome, idade, peso)
+
+//Pedir para o usuario
+input = Leia 
+nome = input('Qual é seu nome')
+idade = input('Qual a sua idade')
+peso = input('Qual o seu peso')
+print(nome, idade, peso)
+modulo interativo do idel para teste de python
+//DESAFIO UM SCRIPT E MOSTRE 
+
+------------------AULA 5------------------------
+explicação pycharm
+
+------------------AULA 6------------------------
+troquei o pycharm pelo vscode (maior costume)
+correção dos exercicios
+
+-----------------AULA 7-------------------------
+(forma errada
+n1 = input('Digite um número')
+n2 = input('Digite o segundo número')
+soma = n1 + n2
+print('A soma vale', soma)
+)
+
+(forma correta
+n1 = int(input('Digite um número'))
+n2 = int(input('Digite o segundo número'))
+soma = n1 + n2
+print('A soma vale', soma)
+)
+
+quando um valor é informado pelo usuario ele é passado como string e não como numero 
+
+INT()convertido número inteiro
+FLOAT()valores reais
+BOOL()valores boleanos
+STR()caracteres
+
+#FORMAS DIFERENTE DE USAR O PRINT
+print('A soma vale()'.format(variavel))
+
+PARA SABER O TIPO DE UMA VAR SEU USA type() na frente da var
+
+isnumeric() se é numero
+isupper() Letras maisuculas
+isalpha() se é letras
+isspace() se é somente espaços
+isalphanum() alfabetico e numerico
+islower() letras minisculas
+istitle() capitalizados = maisculas + miniscua
