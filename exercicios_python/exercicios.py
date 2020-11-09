@@ -189,8 +189,66 @@ km = float(input('Quantos Km Rodados \n'))
 preco = (60 * dia) + (km * 0.15)
 
 print('O total a se pagar foi de: R${:.2f}'.format(preco))
-      
 
+#016
+# Ler um número qualaquer pelo teclado e mostrar a porção inteira
+from math import trunc
+x = float(input('Informe-nos o valor desejado \n'))
+
+print('O valor inteiro é de: {}'.format(trunc(x)))
+ #
+num = float(input('Digite um valor'))
+print('O vlaor  digitado foi {} e a sua porção foi de {}'.format(num, int(num))))
+
+#017
+#Fazer um programa para ler o comprimento do cateto oposto e do cateto adjacentte e  mostre o comprimento da hipotenusa
+co = float(input('cateto oposto \n'))
+ca = float(input('cateto adjacente \n'))
+hip = ((co**2) + (ca**2)) **(1/2) 
+
+print('A hipotenusa vai ser: {:.2f}'.format(hip))
+
+import math 
+co = float(input('cateto oposto \n'))
+ca = float(input('cateto adjacente \n'))
+hi = math.hypot(co, ca)
+
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
+#018
+#Programa que leia um ângulo qualquer e mostre na tela o valor do seno, cossno e tangente desse ângulo
+import math
+angu = float(input('Informe-nos o angulo \n'))
+angu = math.radians(angu)
+sen = math.sin(angu)
+cos = math.cos(angu)
+tan = math.tan(angu)
+print('O angulo de {} tem o Seno de {:.2f}'.format(angu, sen))
+print('O angulo de {} tem o Coseeno de {:.2f}'.format(angu, cos))
+print('O angulo de {} tem a Hipotenusa de {:.2f}'.format(angu, tan))
+
+#019
+#sortear 4 alunos para apagar o quadro, um programa que ajude ele , lendo o nome e escrevendo o nome do escolhido
+import random
+alunos = []
+for i in range(4):
+  alunos.append(input('Informe-nos o nome do aluno \n'))
+
+print('O aluno que vai apagar a lousa é {}'.format(random.choice(alunos)))
+
+#\\\\\\\\\\\\\
+aluno1 = input('1° aluno \n')
+aluno2 = input('2° aluno \n')
+aluno3 = input('3° aluno \n')
+aluno4 = input('4° aluno \n')
+
+print('O aluno que vai apagar a lousa é {}'.format(random.choices(alunos)))
+
+#020
+#Pegar o programa anterior e sortear a ordem dos alunos randomicamente mostrando a ordem
+
+#021 
+#fazer um programa que reproduza um arquivo MP3
 
 
 
