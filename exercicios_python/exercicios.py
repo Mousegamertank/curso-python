@@ -175,6 +175,23 @@ sal = float(input('Informe-nos seu salario \n'))
 
 #print('Seu novo salário é: {}'.format(sal + aumen))
 print('Seu novo salário é: {}'.format(sal + ((sal * 15) /100)))
+      
+#014
+#ler em graus celsius a temperatura e passar para farenheigth
+c = float(input('Informe o valor em graus celsius'))
+f = (c * 9/5) + 32
+print('O modelo de resposta de {} celsius é: {}'.format(c, f))
+
+#015
+#Perguntar a qauantidade de Km percorridos e dias sendo que o custo do dia é de 60:00 R$, e o de km é 0,15 R$
+dia = int(input('Informe-nos a quantidade de dias alugado \n'))
+km = float(input('Quantos Km Rodados \n'))
+preco = (60 * dia) + (km * 0.15)
+
+print('O total a se pagar foi de: R${:.2f}'.format(preco))
+      
+
+
 
 
 
