@@ -163,7 +163,7 @@ print('A quantidade de tinta a ser utilizada vai ser {}'.format((alt * larg)  / 
 #012
 #Ler o preço do produto e subtrair 5 %
 
-preco = float(input('Informe-nos o valor e deixaremos com 5 porcento de desconto \n'))
+preco = float(input('Informe-nos o valor e deixaremos com 5 porcento de desconto \n R$ '))
 #descon = (preco * 5) / 100
 print('O valor é de :{}'.format(preco - ((preco * 5) / 100)))
 #print('O valor é de: {}'.format(preco - descon))
@@ -175,6 +175,4 @@ sal = float(input('Informe-nos seu salario \n'))
 
 #print('Seu novo salário é: {}'.format(sal + aumen))
 print('Seu novo salário é: {}'.format(sal + ((sal * 15) /100)))
-
-
 
