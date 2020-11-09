@@ -64,6 +64,52 @@ e = n1 ** n2
 print('A soma vale {}, \n produto {}, \n divisão{:.2f} '.format(s, m, d), end='')
 print('Divisão inteira {} e potencia {}'.format(di, e))
 
+#aula 008
+#modulos, pacotes, conjuntos de funções 
+'''
+python vem com pacotes basicos, chamadas de bibliotecas; e assim importar modulos;
+import(importa todas os recursos da biblioteca)
+from (chama a biblioteca desejada) import (seleciona as funçoes dentro da biblioteca)
+
+import math (ppega toda a biblioteca)
+ceil  (arredonda para cima)
+floor (arredonda para baixo)
+trunc (elimina os elementos pós virgula)
+pow   (potencia)
+factorial (fatorial)
+sqrt  (raiz quadrada)
+
+from math import sqrt (escolhe qual a função vai ser utilizada)
+from math import sqrt, ceil
+
+#Pratica da Aula 008
+
+import math
+num = int(input('Digite um úmero: '))
+raiz = math.sqrt(num)
+
+print('A raiz de {} é igual a {}'.format(num, math.ceil(raiz)))
+print('A raiz de {} é igual a {}'.format(num, math.floor(raiz)))
+
+from math import sqrt, floor
+num = int(input('Digite um úmero: '))
+raiz = sqrt(num)
+
+print('A raiz de {} é igual a {}'.format(num, floor(raiz)))
+
+import random (biblioteca me da um valor aleatorio)
+num = random.random() [float entre 0 e 1]
+print(num)
+randint(x, y) [gera um número inteiro]
+
+#bibliotecas para emoji
+import emoji
+print(emoji.emojize('Olá Mundo :sunglasses:', use_aliases="True"))
+print(emoji.emojize('Olá Mundo :earth_americas:', use_aliases="True"))
+ 				(Nome do emoji)
+'''
+
+
 
 
 
