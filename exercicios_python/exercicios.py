@@ -101,7 +101,7 @@ valor = float(input('Insira o valor em metros \n'))
 #mm = valor * 1000
 
 #print(' O valor em centimetros fica {} \n e o valor em milimetros fica {} '.format(cm, mm))
-print(' O valor em kilometros fica {} \n e o valor em hectametros fica {} '.format((valor / 1000), (valor / 100))')
+print(' O valor em kilometros fica {} \n e o valor em hectametros fica {} '.format((valor / 1000), (valor / 100)))
 print(' O valor em centimetros fica {} \n e o valor em milimetros fica {} '.format((valor * 100), (valor * 1000)))
 
 
@@ -198,7 +198,7 @@ x = float(input('Informe-nos o valor desejado \n'))
 print('O valor inteiro é de: {}'.format(trunc(x)))
  #
 num = float(input('Digite um valor'))
-print('O vlaor  digitado foi {} e a sua porção foi de {}'.format(num, int(num))))
+print('O vlaor  digitado foi {} e a sua porção foi de {}'.format(num, int(num)))
 
 #017
 #Fazer um programa para ler o comprimento do cateto oposto e do cateto adjacentte e  mostre o comprimento da hipotenusa
@@ -269,11 +269,42 @@ print('O aluno que vai apagar a lousa é {}'.format(alunos))
 #022
 #ler o nome do usuario completo e mostrar:
 #O nome com todas as letras maisculas, com as letras minusculas, quantas letras sem considerar espaço, e quantas letras tem o primeiro nome
+nome = input('Informe o sue nome \n')
+
+print('o nome em maiuculos vai ser {}'.format(nome.upper()))
+print('o nome em minusculos vai ser {}'.format(nome.lower()))
+print('o nome em quantas letras sem espaços vai ser {}'.format(nome))
+print('o nome em letras no primeiro nome vai ser {}'.format(nome.slice()))
 
 #023 
 #ler um número de 0 a 9999 e mostra cada um dos digitos separados, ex: 1834
 #unidade: 4; dezena: 3; centena: 8; milhar: 1
+nome = input('Informe o sue nome \n')
+
+print('o nome em maiuculos vai ser {}'.format(nome.upper()))
+print('o nome em minusculos vai ser {}'.format(nome.lower()))
+nome = slice(nome)
+print('o nome em quantas letras sem espaços vai ser {}'.format(nome))
+print('o nome em letras no primeiro nome vai ser {}'.format(nome))
 
 
+#024
+#ler o nome de uma cidade e ver se tal começa com 'SANTO'  
+nome = input('Informe o sue nome \n')
 
+
+#025
+#ler o nome de uma pessoa e dizer se possue o SILVA
+nome = input('Informe o sue nome \n')
+
+if (nome.)
+
+#026
+#ler uma frase qualquer e mostrar
+#quantas vezes aparece a letra A, em que posição ela aprece na primeira, e que posição ela aparece na ultima
+frase = input('Informe a frase \n')
+
+#027
+#ler o nome completo mostrar o primeito e o ultimo nome separados ex: Ana maria de Souza
+#Ana, Maria
 
