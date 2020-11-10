@@ -109,7 +109,59 @@ print(emoji.emojize('Olá Mundo :earth_americas:', use_aliases="True"))
  				(Nome do emoji)
 '''
 
+#AULA 09 
+#cadeia de caracteres para solução de programas
+#frase = 'Curso em Video Python'
+#cada letra é um caracetr encluindo em espaços 
+#frase[9] pega a letra na casa 9 
+#frase[9:13] pega as letras até na casa 12  a partir do 9
+#frase[9:21:2] do caracter 9 a 20 de 2 em dois
+#frase[:5] vai de 0 a 4 
+#frase[15:] vai do caracter escolhido (15) até o final
+#frase[9::3] começa no 9 e vai até o final em 3 casas
+#len(frase) comprimento da string
+#frase.count('o') conta os o dentro da string
+#frase.count('o, 0, 13') conta os O dentro da string com fatiamento
+#frase.find('deo') quantidade de vezes que fez a comtagem da sring desejada / caso não exista ele -1 
+#'Curso' in frase (existe a string em uma string)
+#frase.replace('Python', 'Android') substitui o primeiro valor pelo segundo especificado
+#frase.upper() deixa em maiusculo
+#frase.lower() transforma em minusculo
+#frase.capitalize() deixa o primeiro caracter em Maiscula e o resto em minusculo
+#frase.title() transforma cada  palavra com o Capitalize
+#frase.strip() remove os espaço inuteis no inicio e no fim
+#frase.rstrip() remove somente os ultimos espaços
+#frase.lstrip() remove os espaços da direita
+#frase.split() divisão da string 
+#'-'.join(frase) pega as strings separadas pelo split e coloca o valor desejado
+#pratica aula 9
+frase = '   Curso em Video Python   ' 
+print(frase[3])
+print(frase[3:13])
+print(frase[:13])
+print(frase[13:])
+print(frase[1:15])
+print(frase[::2])
 
+print('OI')
+print("""ksdjflkjasldkfjlkasjlçdjfklsjadlkfjklsajdkfjlsjadljfk
+asdfasdfasdgjjjjjjjjjjjjh
+sadgkjhasdkjfjasldkjfçasjdkg]kaskdhgfsjka
+""")
 
+print(frase.count('o'))
+print(frase.upper().count('o')) #joga para maiuscula e deixa o o 
 
+print(len(frase))
+print(len(frase.strip()))
+
+print(frase.replace('Python', 'Android'))
+print(frase.replace('Python', 'Android'))
+print(frase)
+
+print('Curso' in frase)
+print(frase.lower().find('Curso'))
+print(frase.split())
+divido = frase.split()
+print(divido[2][3])
 
