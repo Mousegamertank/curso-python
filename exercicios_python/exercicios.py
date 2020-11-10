@@ -246,8 +246,34 @@ print('O aluno que vai apagar a lousa é {}'.format(random.choices(alunos)))
 
 #020
 #Pegar o programa anterior e sortear a ordem dos alunos randomicamente mostrando a ordem
+import random
+alunos = []
+for i in range(4):
+  alunos.append(input('Informe-nos o nome do aluno \n'))
+
+random.shuffle(alunos)
+print('O aluno que vai apagar a lousa é {}'.format(alunos))
+
+from random import shuffle
+alunos = []
+for i in range(4):
+  alunos.append(input('Informe-nos o nome do aluno \n'))
+
+shuffle(alunos)
+print('O aluno que vai apagar a lousa é {}'.format(alunos))
 
 #021 
 #fazer um programa que reproduza um arquivo MP3
+# Fazer em casa
+
+#022
+#ler o nome do usuario completo e mostrar:
+#O nome com todas as letras maisculas, com as letras minusculas, quantas letras sem considerar espaço, e quantas letras tem o primeiro nome
+
+#023 
+#ler um número de 0 a 9999 e mostra cada um dos digitos separados, ex: 1834
+#unidade: 4; dezena: 3; centena: 8; milhar: 1
+
+
 
 
