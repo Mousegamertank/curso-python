@@ -165,3 +165,74 @@ print(frase.split())
 divido = frase.split()
 print(divido[2][3])
 
+#aula 010
+'''
+condições simples e compostas
+estrutura sequenciaç
+carro.siga() carro é o objeto e o siga o metodo
+carro.esquerda() 
+carro.siga()
+carro.direita()
+
+2 possibilidades logo ele pode desviar de linhas a partir de uma decisão
+condições dos programas
+
+indentação
+
+carro.siga()
+se carro.esquerda() 
+ comando1
+ comando2
+ comando3
+senao
+ comando1
+ comando2
+ comando3
+carro.pare()
+
+Estrutura condicional
+se carro.esquerda()
+ bloco_v_
+senao
+ bloco_f_
+===
+if carro.esquerda():
+ bloco True
+else:
+ bloco False
+ 
+tempo = int(input('Quantos anos tem seu carro?'))
+if tempo <= 3:
+ print('Carro novo')
+else:
+ print('carro velho')
+print('--FIM--')
+
+tempo = int(input('Quantos anos tem seu carro?'))
+print('carro novo' if tempo<=3 else'carro velho')
+print('--FIM--')
+'''
+
+nome = str(input('Qaul o seu nome?  '))
+if nome == 'Pedro':
+  print('Nome mais que comum')
+else:
+  print('Nome normal')
+print('Bom dia {}!'.format(nome))
+#
+n1 = float(input('Digite a 1° nota  '))
+n2 = float(input('Digite a 2° nota  '))
+m = (n1 + n2)/2
+print('A sua média foi {:.1f}'.format(m))
+
+if m >= 6.0:
+  print('Sua média foi boa! Parabens')
+else:
+  print('Sua Média foi ruim! Estude Mais!')
+#
+n1 = float(input('Digite a 1° nota  '))
+n2 = float(input('Digite a 2° nota  '))
+m = (n1 + n2)/2
+print('A sua média foi {:.1f}'.format(m))
+
+print('PARABENS' if m>= 6 else 'ESTUDE MAIS!')
