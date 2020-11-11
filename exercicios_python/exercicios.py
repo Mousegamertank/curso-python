@@ -356,3 +356,59 @@ nome = nome.split()
 print('Seu primeiro nome é: {}'.format(nome[0]))
 print('Seu ultimo nome é: {}'.format(nome[len(nome)-1]))
 
+#028 - escreva um programa pensar em um numero inteiro entre 0 e 5 e peça para o usuario tentar descobrir qual foi o numero escolhido pelo computador mostrae se venceu ou perder
+import random
+n = [1, 2 ,3 ,4 , 5]
+n = random.choice(n)
+
+nUsuario = int(input('Informe o numero entre 1 a 5 \n'))
+if (nUsuario == n):
+  print('Está Correto')
+else:
+  print('Está Errado')
+  
+#029 - ler a velocidade de um carro, se passar 80km/h foi multado se não ultrapassar mostra nada, a multa vai ser R$7.00 por cada Km acima do limite
+velocidade = float(input('Informe a velocidade do carro(já está em km) \n'))
+
+if velocidade > 80:
+  diferença = velocidade - 80
+  diferença *= 7.00
+  print('A sua multa será de: R${}'.format(diferença))
+else:
+  print('Parabens pela conduda perante ao volante')
+  
+#030 - numero par ou impar o usuario digita o numero
+num = int(input('Informe um número inteiro, ex:1, 2... \n'))
+
+if num % 2 == 0:
+  print('O número {} é par'.format(num))
+else:
+  print('O número {} é impar'.format(num))
+  
+#031 - distancia de uma viagem em KM calcule o preço da passagem, cobrando R$0.50 por KM para viagens de até 200km e R$0.45 para viagens mais longas
+km = float(input('Informe a distancia (já está em kilometros) \n'))
+
+if km <= 200:
+  print('O valor da sua passagem será de: {:.2f}'.format(km * 0.50))
+else:
+  print('O valor da sua passagem será de: {:.2f}'.format(km * 0.45))
+
+#032 - faça um programa qualquer e mostre se é bissexto
+ano = str(input('Informe o ano \n'))
+anof = int(ano)
+un = ano[-1]
+de = ano[-2]
+ano = de + un
+ano = int(ano)
+
+if (ano % 4 == 0):
+  print('O ano {} é bissexto'.format(anof))
+else:
+  print('O ano {} não é bissexto'.format(anof))
+  
+#033 - faça um programa que leia 3 números qual o maior e o menor
+
+#034 - pedir o salario para o funcionario se for superior a 1.250,00 aumentar 10%, senão aumento de 15%
+
+#035 - ler tres retas e informar se é um triangulo 
+
