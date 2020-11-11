@@ -367,6 +367,26 @@ if (nUsuario == n):
 else:
   print('Está Errado')
   
+#
+from random import randint
+from time import sleep
+
+computador = randint(0, 5)
+
+print('=*=' * 20)
+
+nusu = int(input('Informe o numero entre 1 a 5 \n'))
+
+sleep(2) #faz o computador dar uma paradinha
+
+if (computador == nusu):
+  print('Está Correto')
+else:
+  print('Está Errado')
+print('=*=' * 20)
+
+
+
 #029 - ler a velocidade de um carro, se passar 80km/h foi multado se não ultrapassar mostra nada, a multa vai ser R$7.00 por cada Km acima do limite
 velocidade = float(input('Informe a velocidade do carro(já está em km) \n'))
 
@@ -407,6 +427,16 @@ else:
   print('O ano {} não é bissexto'.format(anof))
   
 #033 - faça um programa que leia 3 números qual o maior e o menor
+n1 = int(input('Informe o 1° número'))
+n2 = int(input('Informe o 2° número'))
+n3 = int(input('Informe o 3° número'))
+
+if n1 > n2 and n1 > n3:
+  print('O {} é o maior número'.format(n1))
+if n2 > n1 and n2 > n3:
+  print('O {} é o maior número'.format(n2))
+if n3 > n2 and n1 < n3:
+  print('O {} é o maior número'.format(n3))
 
 #034 - pedir o salario para o funcionario se for superior a 1.250,00 aumentar 10%, senão aumento de 15%
 
