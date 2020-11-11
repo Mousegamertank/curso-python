@@ -269,42 +269,90 @@ print('O aluno que vai apagar a lousa é {}'.format(alunos))
 #022
 #ler o nome do usuario completo e mostrar:
 #O nome com todas as letras maisculas, com as letras minusculas, quantas letras sem considerar espaço, e quantas letras tem o primeiro nome
-nome = input('Informe o sue nome \n')
+nome = str(input('Informe o sue nome \n')).strip()
 
 print('o nome em maiuculos vai ser {}'.format(nome.upper()))
 print('o nome em minusculos vai ser {}'.format(nome.lower()))
-print('o nome em quantas letras sem espaços vai ser {}'.format(nome))
-print('o nome em letras no primeiro nome vai ser {}'.format(nome.slice()))
+print('o nome em quantas letras sem espaços vai ser {}'.format(len(nome)- nome.count(' ')))
+#print('o nome em letras no primeiro nome vai ser {}'.format(nome.find(' ')))
+separa = nome.split()
+print('Seu primeiro no é {} e ele tem {} letras'.format(separa[0], len(separa[0])))
 
 #023 
 #ler um número de 0 a 9999 e mostra cada um dos digitos separados, ex: 1834
 #unidade: 4; dezena: 3; centena: 8; milhar: 1
-nome = input('Informe o sue nome \n')
+#023
+#ler um número de 0 a 9999 e mostra cada um dos digitos separados, ex: 1834
+#unidade: 4; dezena: 3; centena: 8; milhar: 1
+x = int(input('Informe o numero \n'))
+n = str(x)
 
-print('o nome em maiuculos vai ser {}'.format(nome.upper()))
-print('o nome em minusculos vai ser {}'.format(nome.lower()))
-nome = slice(nome)
-print('o nome em quantas letras sem espaços vai ser {}'.format(nome))
-print('o nome em letras no primeiro nome vai ser {}'.format(nome))
+print('a unidade é: {}'.format(n[3]))
+print('a dezena é: {}'.format(n[2]))
+print('a centena é: {}'.format(n[1]))
+print('o milhar é: {}'.format(n[0]))
 
+#
+x = int(input('Informe o numero \n'))
+
+u = x // 1 % 10
+d = x // 10 % 10
+c = x // 100 % 10
+m = x // 1000 % 10
+
+print('a unidade é: {}'.format(u))
+print('a dezena é: {}'.format(d))
+print('a centena é: {}'.format(c))
+print('a centena é: {}'.format(m))
 
 #024
 #ler o nome de uma cidade e ver se tal começa com 'SANTO'  
-nome = input('Informe o sue nome \n')
+cidade = str(input('Informe o nome da sua cidade \n')).strip()
+cidade = cidade.lower()
+cidade = cidade[:5]
+
+print('se o valor a seguir for -1 sua cidade não começa com santo \n {}'.format(cidade.find('santo')))
+
+#
+cidade = str(input('Informe o nome da sua cidade \n')).strip()
+cidade = cidade.capitalize()
+print(cidade[:5] == 'Santo')
+
+#
+cidade = str(input('Informe o nome da sua cidade \n')).strip()
+print(cidade[:5].capitalize() == 'Santo')
 
 
 #025
 #ler o nome de uma pessoa e dizer se possue o SILVA
-nome = input('Informe o sue nome \n')
-
-if (nome.)
+#ler o nome de uma pessoa e dizer se possue o SILVA
+nome = str(input('Informe o seu nome completo \n')).strip()
+nome = nome.title()
+print('Silva' in nome)
 
 #026
 #ler uma frase qualquer e mostrar
 #quantas vezes aparece a letra A, em que posição ela aprece na primeira, e que posição ela aparece na ultima
-frase = input('Informe a frase \n')
+#026
+#ler uma frase qualquer e mostrar
+#quantas vezes aparece a letra A, em que posição ela aprece na primeira, e que posição ela aparece na ultima
+
+frase = str(input('Informe a Frase \n')).strip()
+frase = frase.upper()
+print('existem {} "A"'.format(frase.count('A')))
+print('ela aparece na posição {}'.format(frase.find('A')+1))
+print('ela aparece na posição {}'.format(frase.rfind('A')))
+
+
 
 #027
 #ler o nome completo mostrar o primeito e o ultimo nome separados ex: Ana maria de Souza
 #Ana, Maria
+#027
+#ler o nome completo mostrar o primeito e o ultimo nome separados ex: Ana maria de Souza
+#Ana, Maria
+nome = str(input('Informe o nome completo \n')).strip()
+nome = nome.split()
+print('Seu primeiro nome é: {}'.format(nome[0]))
+print('Seu ultimo nome é: {}'.format(nome[len(nome)-1]))
 
