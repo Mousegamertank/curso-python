@@ -393,7 +393,7 @@ velocidade = float(input('Informe a velocidade do carro(já está em km) \n'))
 if velocidade > 80:
   diferença = velocidade - 80
   diferença *= 7.00
-  print('A sua multa será de: R${}'.format(diferença))
+  print('A sua multa será de: R${:.2f}'.format(diferença))
 else:
   print('Parabens pela conduda perante ao volante')
   
@@ -404,7 +404,7 @@ if num % 2 == 0:
   print('O número {} é par'.format(num))
 else:
   print('O número {} é impar'.format(num))
-  
+   
 #031 - distancia de uma viagem em KM calcule o preço da passagem, cobrando R$0.50 por KM para viagens de até 200km e R$0.45 para viagens mais longas
 km = float(input('Informe a distancia (já está em kilometros) \n'))
 
@@ -439,6 +439,14 @@ if n3 > n2 and n1 < n3:
   print('O {} é o maior número'.format(n3))
 
 #034 - pedir o salario para o funcionario se for superior a 1.250,00 aumentar 10%, senão aumento de 15%
+salario = float(input('Informe-nos o seu salário: R$ '))
+
+if salario >= 1250.00:
+  salario = ((salario * 10) / 100) + salario
+else:
+  salario = ((salario * 15) / 100) + salario
+
+print('Seu novo salário é: {:.2f}'.format(salario))
 
 #035 - ler tres retas e informar se é um triangulo 
-
+ 
