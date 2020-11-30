@@ -236,3 +236,44 @@ m = (n1 + n2)/2
 print('A sua média foi {:.1f}'.format(m))
 
 print('PARABENS' if m>= 6 else 'ESTUDE MAIS!')
+
+#AULA 11 
+#ANSI (escape sequence)
+#COMEÇO DA ESTRUTURA 
+# \ padrão
+# 033 (melhor padrão de cores para o python)
+# [
+# (codigo do estilo);
+# (codigo de texto) ;  
+# (codigo de cor de fundo)
+# m
+# FIM DA ESTRUTURA
+# \033[0; 33; 44m
+# codigos para estilo 0, 1, 4, 7
+'''
+\033[ 
+0 = sem estilo
+1 = negrito
+4 = sublinhar
+7 = inverter (letra vai fundo, fundo vai letra)
+;
+30 = branco
+31 = vermelho 
+32 = verde
+33 = amarelo 
+34 = azul 
+35 = roxo
+36 = ciano 
+37 = cinza
+;
+40 a 47 ordem semlhante acima
+m
+'''
+print('\033[1;32;40mPedro')
+nome = 'Pedro'
+print('Olá muito prazer em te conhecer {}{}{}'.format('\033[1;32;20m' ,nome, '\033[m'))
+
+cores = {'Limpa':'\033[m',
+         'Letra_Azul':'\033[34m',
+         'amarelo' : '\033[33m'}
+print('Olá muito prazer em te conhecer {}{}{}'.format(cores['amarelo'] ,nome, cores['Letra_Azul']))

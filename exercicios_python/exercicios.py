@@ -409,23 +409,22 @@ else:
 km = float(input('Informe a distancia (já está em kilometros) \n'))
 
 if km <= 200:
-  print('O valor da sua passagem será de: {:.2f}'.format(km * 0.50))
+  print('O valor da sua passagem será de: R${:.2f}'.format(km * 0.50))
 else:
-  print('O valor da sua passagem será de: {:.2f}'.format(km * 0.45))
+  print('O valor da sua passagem será de:  R${:.2f}'.format(km * 0.45))
 
 #032 - faça um programa qualquer e mostre se é bissexto
-ano = str(input('Informe o ano \n'))
-anof = int(ano)
-un = ano[-1]
-de = ano[-2]
-ano = de + un
-ano = int(ano)
+from datetime import date
+ano = int(input('Informe o ano \n coloque 0 para descobrir o ano atual é bissexto ou não'))
+if ano == 0:
+  ano = date.today().year
 
-if (ano % 4 == 0):
-  print('O ano {} é bissexto'.format(anof))
+if ano % 4 == 0 and ano % 100 == 0 or ano % 400 == 0:
+  print('O ano {} é bissexto'.format(ano))
+
 else:
-  print('O ano {} não é bissexto'.format(anof))
-  
+  print('O ano {} não é bissexto'.format(ano))
+
 #033 - faça um programa que leia 3 números qual o maior e o menor
 n1 = int(input('Informe o 1° número'))
 n2 = int(input('Informe o 2° número'))
@@ -433,10 +432,42 @@ n3 = int(input('Informe o 3° número'))
 
 if n1 > n2 and n1 > n3:
   print('O {} é o maior número'.format(n1))
+  if n2 > n3:
+    print('O menor valor é {}'.format(n3))
+  else: 
+    print('O menor valor é {}'.format(n2))
+
 if n2 > n1 and n2 > n3:
   print('O {} é o maior número'.format(n2))
+  if n1 > n3:
+    print('O menor valor é {}'.format(n3))
+  else: 
+    print('O menor valor é {}'.format(n1))
+
 if n3 > n2 and n1 < n3:
   print('O {} é o maior número'.format(n3))
+  if n2 > n1:
+    print('O menor valor é {}'.format(n2))
+  else: 
+    print('O menor valor é {}'.format(n1))
+
+#correção guanabara
+n1 = int(input('Informe o 1° número'))
+n2 = int(input('Informe o 2° número'))
+n3 = int(input('Informe o 3° número'))
+menor = n1
+if n2 < menor and n2 < n3:
+  menor = n2
+if n3 < menor and n3 < n2:
+  menor = n3
+print('O menor valor foi {}'.format(menor))
+
+maior = n1
+if n2 > maior and n2 > n3:
+  maior = n2
+if n3 > maior and n3 > n2:
+  maior = n3
+print('O mairo valor foi {}'.format(maior))
 
 #034 - pedir o salario para o funcionario se for superior a 1.250,00 aumentar 10%, senão aumento de 15%
 salario = float(input('Informe-nos o seu salário: R$ '))
@@ -449,4 +480,39 @@ else:
 print('Seu novo salário é: {:.2f}'.format(salario))
 
 #035 - ler tres retas e informar se é um triangulo 
- 
+l1 = float(input('Informe o lado 1° do triangulo: '))
+l2 = float(input('Informe o lado 2° do triangulo: '))
+l3 = float(input('Informe o lado 3° do triangulo: '))
+maior = l1
+
+if l2 > maior and l2 > l3:
+  maior = l2
+if l3 > maior and l3 > l2:
+  maior = l3
+
+if l2 == maior:
+  soma = l1 + l3 
+  if soma > maior:
+    msg = 'Pode formar triangulo'
+  else:
+    msg = 'Não pode formar triangulo'
+
+if l3 == maior:
+  soma = l2 + l1 
+  if soma > maior:
+    msg = 'Pode formar triangulo'
+  else:
+    msg = 'Não pode formar triangulo'
+
+print(msg)
+
+#Correção Guanabara 
+l1 = float(input('Informe o lado 1° do triangulo: '))
+l2 = float(input('Informe o lado 2° do triangulo: '))
+l3 = float(input('Informe o lado 3° do triangulo: '))
+
+if l1 < l2 + l3 and l2 < l3 + l1 and l3 < l1 + l2:
+  print('Os segmentos acima Podem Formar um triangulo')
+else:
+  print('Os segmentos acima NÃO Podem Formar um triangulo')
+
